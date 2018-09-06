@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculator</title>
+</head>
+<body>
+	First value:<br>
+	<input type="text" id="firstfield"><br>
+	Second value:<br>
+	<input type="text" id="secondfield"><br>
+	Result:<br>
+	<input type="text" id="result"><br>
+	<input type="button" onclick="addition()" value="Addition">
+	<script>
+		function addition(){
+			document.getElementById("result").value = parseFloat(document.getElementById("firstfield").value) + parseFloat(document.getElementById("secondfield").value);
+		}
+	</script>
+</body>
+</html>
